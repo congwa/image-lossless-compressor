@@ -1,4 +1,4 @@
-# Image-Compressor
+# image-lossless-compressor
 
 A simple npm package for compressing images and converting them to WebP format.
 
@@ -34,11 +34,11 @@ Due to time constraints, I am currently working at the company.
 ## 使用方法 (Usage)
 
 ```js
-npm install @congwa/image-compressor
+npm install image-lossless-compressor
 ```
 
 ```javascript
-import { compressAndConvertToWebP } from '@congwa/image-compressor';
+import { compressAndConvertToWebP } from 'image-lossless-compressor';
 
 // Example usage
 compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then(() => {
@@ -61,7 +61,7 @@ compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then((
 ---
 
 
-# 图片压缩工具 Image-Compressor
+# 图片压缩工具 image-lossless-compressor
 
 一个简单的 npm 包，专门用于**无损**压缩图片并转换为 WebP 格式。
 
@@ -92,12 +92,12 @@ compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then((
 
 ```js
 
-npm install @congwa/image-compressor
+npm install image-lossless-compressor
 
 ```
 
 ```javascript
-import { compressAndConvertToWebP } from '@congwa/image-compressor';
+import { compressAndConvertToWebP } from 'image-lossless-compressor';
 
 // 示例用法
 compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then(() => {

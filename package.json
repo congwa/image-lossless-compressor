@@ -1,5 +1,5 @@
 {
-  "name": "@congwa/image-compressor",
+  "name": "@congwa/image-lossless-compressor",
   "version": "1.0.0",
   "description": "lossless compress images and convert to WebP format",
   "engines": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/congwa/image-compressor.git"
+    "url": "git+https://github.com/congwa/image-lossless-compressor.git"
   },
   "keywords": [
     "image",
@@ -67,9 +67,9 @@
     "package.json"
   ],
   "bugs": {
-    "url": "https://github.com/congwa/image-compressor/issues"
+    "url": "https://github.com/congwa/image-lossless-compressor/issues"
   },
-  "homepage": "https://github.com/congwa/image-compressor#readme",
+  "homepage": "https://github.com/congwa/image-lossless-compressor#readme",
   "devDependencies": {
     "@types/node": "^18.15.11",
     "tslib": "^2.5.0",
