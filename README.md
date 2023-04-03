@@ -15,7 +15,7 @@ A simple npm package for compressing images and converting them to WebP format.
 1. Situation 1: When uploading images and asking the backend to compress them, the backend always finds various reasons not to do it, and the compressed images are lossy, have changed pixels, and some colors have changed, which is very unsatisfactory.
 2. Situation 2: Every time a designer gives an image and does not compress it for the frontend, it results in slow loading of images after the project goes online, and ultimately finding the frontend responsible.
 3. Situation 3: The boss complains about the high cost of CDN this month.
-4. Situation 4: TingPng uploads too slowly, has quota limits, and cannot export images in WebP format directly.
+4. Situation 4: tinyPNG uploads too slowly, has quota limits, and cannot export images in WebP format directly.
 
 ## Future Plans
 
@@ -68,10 +68,10 @@ compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then((
 
 ## 写这个包的原因
 
-1. 场景1：上传图片，让后端进行压缩，后端总是各种理由，并且压缩出来的有损、像素改变、部分颜色发生色变，非常不理想
+1. 场景1：上传图片，让后端进行压缩，后端压缩出来的有损、像素改变、部分颜色发生色变，非常不理想
 2. 场景2：每次设计小姐姐给出图片并不给前端压缩，导致项目上线后，发现图片加载慢，最终找到前端
 3. 场景3：老板说这个月的cdn花费怎么这么高？
-4. 场景4：tingPng上传太慢了、有额度限制、不能直接导出webP格式
+4. 场景4：tinyPNG上传太慢了、有额度限制、不能直接导出webP格式
 
 ## 未来计划
 
