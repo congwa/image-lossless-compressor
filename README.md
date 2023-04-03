@@ -2,7 +2,7 @@
 
 A simple npm package for compressing images and converting them to WebP format.
 
-一个简单的npm包，专门用于无损压缩图片并转换为WebP格式。
+一个简单的npm包，专门用于**无损**压缩图片并转换为WebP格式。
 
 ## Features
 
@@ -63,7 +63,7 @@ compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then((
 
 # 图片压缩工具 Image-Compressor
 
-一个简单的 npm 包，专门用于无损压缩图片并转换为 WebP 格式。
+一个简单的 npm 包，专门用于**无损**压缩图片并转换为 WebP 格式。
 
 
 ## 写这个包的原因
