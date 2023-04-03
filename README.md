@@ -1,8 +1,118 @@
-# image-compressor
-这个 Node.js 包提供了一种在服务器端压缩 JPEG 和 PNG 图片的方法。使用该包，用户可以方便地压缩图片以减少其大小，并提高页面加载速度。  对于 JPEG 图片，我们使用名为 MozJPEG 的压缩工具进行压缩。MozJPEG 是经过优化的 JPEG 压缩算法，具有很好的压缩效果和较少的失真。对于含有透明通道的 PNG 图片，我们使用名为 OxiPNG 的压缩工具进行压缩。OxiPNG 能够保留 PNG 图片中的透明通道，并生成较小的文件。对于不属于以上两种类型的图片，我们将跳过不处理。  如果使用上述方法压缩后的图片文件比原图大，我们将放弃压缩并使用原图，以保证压缩后的图片质量不会降低。此外，我们还将使用一组关键词（keywords）来方便用户搜索和识别该包的功能。
+# Image-Compressor
 
-This Node.js package provides a way to compress JPEG and PNG images on the server side. With this package, users can easily compress images to reduce their size and improve page loading speed.
+A simple npm package for compressing images and converting them to WebP format.
 
-For JPEG images, we use a compression tool called MozJPEG for compression. MozJPEG is an optimized JPEG compression algorithm with good compression effect and less distortion. For PNG images with transparent channels, we use a compression tool called OxiPNG for compression. OxiPNG can preserve the transparent channels in PNG images and generate smaller files. For images that do not belong to the above two types, we will skip them without processing.
+一个简单的npm包，专门用于无损压缩图片并转换为WebP格式。
 
-If the compressed image file using the above method is larger than the original image, we will give up compression and use the original image to ensure that the quality of the compressed image is not reduced. In addition, we will use a set of keywords to facilitate users to search and identify the functionality of this package.
+## Features
+
+- Compresses images to reduce file size
+- Converts images to the highly efficient [WebP format](https://developers.google.com/speed/webp) for faster loading times
+- Supports both `.jpg` and `.png` image formats
+
+## Reasons for Developing This Package
+
+1. Situation 1: When uploading images and asking the backend to compress them, the backend always finds various reasons not to do it, and the compressed images are lossy, have changed pixels, and some colors have changed, which is very unsatisfactory.
+2. Situation 2: Every time a designer gives an image and does not compress it for the frontend, it results in slow loading of images after the project goes online, and ultimately finding the frontend responsible.
+3. Situation 3: The boss complains about the high cost of CDN this month.
+4. Situation 4: TingPng uploads too slowly, has quota limits, and cannot export images in WebP format directly.
+
+## Future Plans
+
+Due to time constraints, I am currently working at the company.
+
+1. Publish a NestJS package.
+2. Rewrite it in Golang.
+3. Publish a WASM package module.
+4. export png or jpg
+
+### Effect
+
+![Alt text](/imgs/result.png)
+**5.2MB -> 223KB**
+
+## 使用方法 (Usage)
+
+```js
+npm install image-compressor
+```
+
+```javascript
+import { compressAndConvertToWebP } from 'image-compressor';
+
+// Example usage
+compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then(() => {
+  console.log('Image compressed and converted!');
+}).catch((error) => {
+  console.error('Error:', error);
+});
+```
+
+## 注意事项 (Notes)
+
+- Images must be provided as file paths.
+- The output file extension will always be `.webp`.
+- Requires Node.js v16 or later.
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+---
+
+
+# 图片压缩工具 Image-Compressor
+
+一个简单的 npm 包，专门用于无损压缩图片并转换为 WebP 格式。
+
+
+## 写这个包的原因
+
+1. 场景1：上传图片，让后端进行压缩，后端总是各种理由，并且压缩出来的有损、像素改变、部分颜色发生色变，非常不理想
+2. 场景2：每次设计小姐姐给出图片并不给前端压缩，导致项目上线后，发现图片加载慢，最终找到前端
+3. 场景3：老板说这个月的cdn花费怎么这么高？
+4. 场景4：tingPng上传太慢了、有额度限制、不能直接导出webP格式
+
+## 未来计划
+
+由于时间关系，目前正在公司搬砖中
+
+1. 发布一个nestjs包
+2. 使用golang进行重写
+3. 发布一个wasm包模块
+4. 单独导出png或者jpg
+
+## 功能
+
+- 压缩图片以减小文件大小
+- 将图片转换为高效的 [WebP 格式](https://developers.google.com/speed/webp)，加快加载速度
+- 支持 `.jpg` 和 `.png` 两种图片格式
+
+## 使用方法
+
+```js
+
+npm install image-compressor
+
+```
+
+```javascript
+import { compressAndConvertToWebP } from 'image-compressor';
+
+// 示例用法
+compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then(() => {
+  console.log('图片已压缩并转换格式！');
+}).catch((error) => {
+  console.error('发生错误：', error);
+});
+```
+
+## 注意事项
+
+- 图片必须以文件路径的形式提供。
+- 输出文件的扩展名始终为 `.webp`。
+- 要求 Node.js 版本为 v16 或更高。
+
+## 许可证
+
+[MIT](https://opensource.org/licenses/MIT)

@@ -1,0 +1,86 @@
+{
+  "name": "image-compressor",
+  "version": "1.0.0",
+  "description": "compress images and convert to WebP format",
+  "engines": {
+    "node": ">=16"
+  },
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "start:test": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/congwa/image-compressor.git"
+  },
+  "keywords": [
+    "image",
+    "compression",
+    "JPEG",
+    "compression",
+    "PNG",
+    "compression",
+    "server-side",
+    "image",
+    "processing",
+    "image",
+    "size",
+    "optimization",
+    "transparent",
+    "PNG",
+    "lossless",
+    "compression",
+    "image compression",
+    "JPEG compression",
+    "PNG compression",
+    "WebP",
+    "server-side image processing",
+    "image size optimization",
+    "MozJPEG",
+    "OxiPNG",
+    "transparent PNG",
+    "lossless compression",
+    "image optimization",
+    "图像压缩",
+    "JPEG 压缩",
+    "PNG 压缩",
+    "服务器端图像处理",
+    "图像尺寸优化",
+    "MozJPEG 图像压缩工具",
+    "OxiPNG 图像压缩工具",
+    "透明的 PNG 图片",
+    "无损压缩",
+    "图像优化",
+    "图片转WebP"
+  ],
+  "author": "congwa",
+  "license": "ISC",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "bugs": {
+    "url": "https://github.com/congwa/image-compressor/issues"
+  },
+  "homepage": "https://github.com/congwa/image-compressor#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@types/node": "^16.10.1",
+    "@vheemstra/imagemin-oxipng": "^1.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-webp": "^8.0.0",
+    "oxipng-bin": "^1.0.0",
+    "sharp": "^0.32.0",
+    "ts-node": "^10.9.1"
+  }
+}

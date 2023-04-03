@@ -1,0 +1,14 @@
+{
+  "files": ["index.ts"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "nodenext"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+}
