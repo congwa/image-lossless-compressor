@@ -1,7 +1,7 @@
 {
-  "name": "image-compressor",
+  "name": "@congwa/image-compressor",
   "version": "1.0.0",
-  "description": "compress images and convert to WebP format",
+  "description": "lossless compress images and convert to WebP format",
   "engines": {
     "node": ">=16"
   },
