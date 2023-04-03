@@ -34,11 +34,11 @@ Due to time constraints, I am currently working at the company.
 ## 使用方法 (Usage)
 
 ```js
-npm install image-compressor
+npm install @congwa/image-compressor
 ```
 
 ```javascript
-import { compressAndConvertToWebP } from 'image-compressor';
+import { compressAndConvertToWebP } from '@congwa/image-compressor';
 
 // Example usage
 compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then(() => {
@@ -92,12 +92,12 @@ compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then((
 
 ```js
 
-npm install image-compressor
+npm install @congwa/image-compressor
 
 ```
 
 ```javascript
-import { compressAndConvertToWebP } from 'image-compressor';
+import { compressAndConvertToWebP } from '@congwa/image-compressor';
 
 // 示例用法
 compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then(() => {
