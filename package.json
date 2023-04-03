@@ -1,5 +1,5 @@
 {
-  "name": "@congwa/image-lossless-compressor",
+  "name": "image-lossless-compressor",
   "version": "1.0.0",
   "description": "lossless compress images and convert to WebP format",
   "engines": {
