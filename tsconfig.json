@@ -2,12 +2,11 @@
   "files": ["index.ts"],
   "compilerOptions": {
     "target": "ESNext",
-    "module": "commonjs",
+    "module": "ESNext",
     "outDir": "./dist",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "nodenext",
-    "declaration": true,
     // "node": false // 禁用 Node.js 相关的处理
   },
   "exclude": [
