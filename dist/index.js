@@ -5,7 +5,6 @@ import imagemin from 'imagemin';
 import mozjpeg from 'imagemin-mozjpeg';
 import oxipng from '@vheemstra/imagemin-oxipng';
 import webp from 'imagemin-webp';
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
 // 压缩并转换为WebP格式
 export async function compressAndConvertToWebP(inputFilePath, outputFilePath) {
     const extname = path.extname(inputFilePath).toLowerCase();
@@ -50,6 +49,3 @@ export async function compressAndConvertToWebP(inputFilePath, outputFilePath) {
     // 将压缩后的图片保存到文件系统，并以 .webp 后缀命名
     await fs.writeFile(outputFilePath, webpData);
 }
-
-
-
