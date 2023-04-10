@@ -1,12 +1,11 @@
 {
   "name": "image-lossless-compressor",
-  "version": "1.0.1",
+  "version": "1.0.3-commonjs",
   "description": "lossless compress images and convert to WebP format",
   "engines": {
     "node": ">=16"
   },
-  "type": "module",
-  "exports": "./dist/index.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
@@ -75,11 +74,10 @@
   },
   "dependencies": {
     "@types/node": "^16.10.1",
-    "@vheemstra/imagemin-oxipng": "^1.0.0",
-    "imagemin": "^8.0.1",
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-webp": "^8.0.0",
-    "oxipng-bin": "^1.0.0",
+    "imagemin-oxipng-include-oxipng-bin": "^1.0.0",
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webp": "^6.0.0",
     "sharp": "^0.32.0",
     "ts-node": "^10.9.1"
   }

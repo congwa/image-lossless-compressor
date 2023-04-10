@@ -3,7 +3,7 @@ import path from 'path';
 import sharp from 'sharp';
 import imagemin from 'imagemin';
 import mozjpeg from 'imagemin-mozjpeg';
-import oxipng from '@vheemstra/imagemin-oxipng';
+import oxipng from 'imagemin-oxipng-include-oxipng-bin';
 import webp from 'imagemin-webp';
 // 压缩并转换为WebP格式
 export async function compressAndConvertToWebP(inputFilePath: string, outputFilePath: string): Promise<void> {
