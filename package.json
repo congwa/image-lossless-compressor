@@ -1,6 +1,6 @@
 {
   "name": "image-lossless-compressor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lossless compress images and convert to WebP format",
   "engines": {
     "node": ">=16"

@@ -49,14 +49,17 @@ compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then((
 - 输出文件的扩展名始终为 `.webp`。
 - 要求 Node.js 版本为 v16 或更高。
 
+## 其它语言版本
+
+[go版本](https://github.com/congwa/imageCompressor)
+
 ## 未来计划
 
 由于时间关系，目前正在公司搬砖中
 
 1. 发布一个nestjs包
-2. 使用golang进行重写
-3. 发布一个wasm包模块
-4. 单独导出png或者jpg
+2. 发布一个wasm包模块
+3. 单独导出png或者jpg
 
 ## 许可证
 
