@@ -9,7 +9,7 @@
 版本使用:
 
 - 1.0.3版本为测试过无问题版本-请使用原生esm的方式
-- 1.0.4-commonjs版本为commonjs版本
+- 1.0.5-commonjs版本为commonjs版本
 
 ### 压缩效果
 
@@ -142,7 +142,7 @@ export class UploadController {
 
 ## 未来计划
 
-由于时间关系，目前正在公司搬砖中
+由于时间关系，目前正在公司搬砖中，以后编写
 
 1. 发布一个wasm包模块
 2. 单独导出png或者jpg
