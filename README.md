@@ -45,7 +45,7 @@ compressAndConvertToWebP('path/to/image.jpg', 'path/to/destination/webp').then((
 ### nextjs中的使用
 
 ```bash
-  npm install image-lossless-compressor@1.0.4-commonjs
+  npm install image-lossless-compressor@1.0.5-commonjs
 
 ```
 
