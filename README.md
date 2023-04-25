@@ -2,10 +2,6 @@
 
 一个简单的 npm 包，专门用于**无损**压缩图片并转换为 WebP 格式。
 
-## document
-
-[English](/docs/english.md)
-
 版本使用:
 
 - 1.0.3版本为测试过无问题版本-请使用原生esm的方式
@@ -21,6 +17,8 @@
 - 压缩图片以减小文件大小
 - 将图片转换为高效的 [WebP 格式](https://developers.google.com/speed/webp)，加快加载速度
 - 支持 `.jpg` 和 `.png` 两种图片格式
+
+
 
 ## 使用方法
 
@@ -141,12 +139,12 @@ export class UploadController {
 
 [go版本](https://github.com/congwa/imageCompressor)
 
-## 未来计划
+## 如果你想了解更多关于图片处理的事情
 
-由于时间关系，目前正在公司搬砖中，以后编写
+[图片处理以wasm形式在浏览器的使用和更新版本处理教程](https://github.com/congwa/wasm-codecs-browser)
 
-1. 发布一个wasm包模块
-2. 单独导出png或者jpg
+同时，欢迎来我的[博客](https://github.com/congwa/Front-end-Basics-Notes)转转，你会和我一起成长。
+
 
 ## 许可证
 
